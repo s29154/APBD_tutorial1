@@ -11,4 +11,14 @@ class Program {
         double sum = arr.Aggregate<int, double>(0, (current, t) => current + t);
         return sum / arr.Length;
     }
+
+    static int max(int[] arr)
+    {
+        int max = arr[0];
+        foreach (var i in arr)
+        {
+            if (arr[i] > max) max = arr[i];
+        }
+        return max;
+    }
 }
