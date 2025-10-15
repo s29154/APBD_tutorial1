@@ -8,7 +8,7 @@ class Program {
 
     static double average(int[] arr)
     {
-        double sum = arr.Aggregate<int, double>(0, (current, t) => current + t);
+        double sum = arr.Aggregate<int, double>(0, (cur, t) => cur + t);
         return sum / arr.Length;
     }
 
